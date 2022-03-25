@@ -12,4 +12,4 @@ Prototipos
 ![Image text](https://github.com/SvillarroelZ/SCL020-card-validation.md/blob/main/prototipo-media.jpeg?raw=true)
 
 
-prueba
+3.- Prototipo de Alta fidelidad
