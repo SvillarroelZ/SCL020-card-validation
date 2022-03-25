@@ -6,3 +6,10 @@ Prototipos
  1.- Prototipo de baja fidelidad 
 
 ![Image text](https://github.com/SvillarroelZ/SCL020-card-validation.md/blob/main/prototipo-baja.jpg?raw=true)
+
+2.- Prototipo de Media fidelidad
+
+![Image text](https://github.com/SvillarroelZ/SCL020-card-validation.md/blob/main/prototipo-media.jpeg?raw=true)
+
+
+prueba
