@@ -42,9 +42,22 @@
           <div>
             <label for="adress"> <input type="street-adress" id="adress" placeholder="Dirección" autocomplete="off"></label>
           </div>
+
           <div>
-            <input type="radio" name="Boleta"/>
-            <input type="radio" name="Factura"/>
+            <input type="radio" name="pago"/>Boleta
+            <input type="radio" name="pago"/>Factura
+          </div>
+          <div>
+            <input type="radio" name="medio"/>Efectivo
+            <input type="radio" name="medio" checked/>Tarjeta
+          </div>
+
+          <div>
+            <input type="checkbox" name="terms"/>He leído y acepto los <a href="#"> términos y condiciones</a>
+          </div>      
+
+          <div>
+            <a href="validacion.html"><input type="submit" value="Siguiente"></a>
           </div>
 
         </form>
