@@ -28,25 +28,26 @@
         <form action="">
           <p>Datos de facturación</p>
           <div>
-            <label for="name"> <input type="text" id="name" placeholder="Nombre" autocomplete="off"></label>
+            <label for="name"> <input type="text" id="name" placeholder="Nombre" required autocomplete="off" pattern="[a-zA-Z]+"></label>
           </div>
           <div>
-            <label for="surname"> <input type="text" id="surname" placeholder="Apellido" autocomplete="off"></label>
+            <label for="surname"> <input type="text" id="surname" placeholder="Apellido" required autocomplete="off" pattern="[a-zA-Z]+"></label>
           </div>
           <div>
-            <label for="rut"> <input type="text" id="rut" placeholder="RUT" autocomplete="off"></label>
+            <label for="rut"> <input type="text" id="rut" placeholder="RUT" required autocomplete="off" minlength="8" maxlength="9"></label>
           </div>
           <div>
-            <label for="tel"> <input type="tel" id="tel" placeholder="Teléfono" autocomplete="off"></label>
+            <label for="tel"> <input type="tel" id="tel" placeholder="Celular Ej: 569 1234 5678" required autocomplete="off" pattern="[+]" pattern="[0-9]+" minlength="11" maxlength="11"></label>
           </div>
           <div>
-            <label for="adress"> <input type="street-adress" id="adress" placeholder="Dirección" autocomplete="off"></label>
+            <label for="adress"> <input type="street-adress" id="adress" placeholder="Dirección" required autocomplete="off"></label>
           </div>
 
           <div>
             <input type="radio" name="pago"/>Boleta
             <input type="radio" name="pago"/>Factura
           </div>
+
           <div>
             <input type="radio" name="medio"/>Efectivo
             <input type="radio" name="medio" checked/>Tarjeta
@@ -55,15 +56,17 @@
           <div>
             <input type="checkbox" name="terms"/>He leído y acepto los <a href="#"> términos y condiciones</a>
           </div>      
-
-          <div>
-            <a href="validacion.html"> <input type="button" value="Siguiente"></a>
-          </div>
+         
+         <div>
+           <a href="validacion.html"> <button type="submit" value="Siguiente"></a>
+        </div>  
 
         </form>
       </div>
     </div>
     <script src="index.js" type="module"></script>
+
+
     </main>
 
   </body>
