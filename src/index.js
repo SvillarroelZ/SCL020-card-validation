@@ -1,30 +1,27 @@
 import validator from './validator.js';
 
-console.log(validator);
+//Guardar datos de formulario en botón//
+
+var formulario=document.getElementById("formulario");
+formulario.addEventListener("submit", function(e) {
+    e.preventDefault()
+
+    guardarNombre()
+})
+
+function guardarNombre(){
+    var username=document.getElementById("username").value;
+    // var surname=doctument.getElementByID("surname").value;
+
+        alert(username);  
+}
 
 
-// // Función orden rut //
+// var nextPage=document.getElementById("nextPage");
+// nextPage.addEventListener("submit" function (){
+//     siguientePagina()
 
-// function rut
+// })
 
-//     {
-//         var div1, div2, div3, div4;
-        
-//         if(rut.length==9){    
-//             div1=rut.slice(0,2);
-//             div2=rut.slice(2,5);
-//             div3=rut.slice(5,8);
-//             div4=rut.slice(8,9);
-
-//             rut=$(this).val(div1 + "." + div2 + "." + div3 + "-" + div4);
-//         }
-
-//         if(rut.length==8){    
-//             div1=rut.slice(0,1);
-//             div2=rut.slice(1,4);
-//             div3=rut.slice(4,7);
-//             div4=rut.slice(7,8);
-
-//             rut=$(this).val(div1 + "." + div2 + "." + div3 + "-" + div4);
-//         }
-//     });
+// function siguientePagina(){
+//     var nextPage=document.getElementById("nextPage").location.href = 'validacion.html';
