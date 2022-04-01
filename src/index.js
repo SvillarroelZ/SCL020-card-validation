@@ -14,14 +14,6 @@ function guardarNombre(){
     // var surname=doctument.getElementByID("surname").value;
 
         alert(username);  
+    window.location.href="./validacion.html"    
 }
 
-
-// var nextPage=document.getElementById("nextPage");
-// nextPage.addEventListener("submit" function (){
-//     siguientePagina()
-
-// })
-
-// function siguientePagina(){
-//     var nextPage=document.getElementById("nextPage").location.href = 'validacion.html';
