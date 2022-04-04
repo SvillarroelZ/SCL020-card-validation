@@ -10,15 +10,25 @@ import validator from './validator.js';
 //           }
 //       }
 
-function valCheckbox(){
-    var validando=document.getElementById("terms");
-    validando.addEventListener("checked", ,false);
-
+function comprobarChecks(event){
+    var checkbox=document.getElementsByName("terms");
+    var contador=0
+    for (var i=0; i<checkbox.length; i++){
+        if(checkbox[i].checked)
+        contador++
+    }
+    if(contador==0){
+        alert("Por favor, lee y acepta los términos y condiciones antes de proceder con el pago");
+        event.preventDefault
+    }
 }
 
 
+// function valCheckbox(){
+//     var validando=document.getElementById("terms");
+//     validando.addEventListener("checked", ,false);
 
-
+// }
 
 // Intento 2/domi
 //function pago(){
@@ -77,16 +87,16 @@ function valCheckbox(){
 
 // Guardar datos de formulario en botón y redireccionar //
 
-var formulario=document.getElementById("formulario");
-formulario.addEventListener("submit", function(e) {
+let formulario=document.getElementById("formulario");
+formulario.addEventListener("submit", function(e){
     e.preventDefault()
 
     guardarNombre()
 })
 
 function guardarNombre(){
-    var username=document.getElementById("username").value;
-    var surname=document.getElementById("surname").value;
+    let username=document.getElementById("username").value;
+    let surname=document.getElementById("surname").value;
 
         alert (username);  
         alert (surname);
