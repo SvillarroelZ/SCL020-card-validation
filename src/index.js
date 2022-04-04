@@ -1,4 +1,10 @@
 import validator from './validator.js';
+
+
+Function validarCheckbox
+var checked=document.getElementById
+
+
 // Validar checkbox términos y condiciones // 
 // var checkbox=document.querySelector(".terms");
 //  console.log(checkbox)
@@ -10,18 +16,19 @@ import validator from './validator.js';
 //           }
 //       }
 
-function comprobarChecks(event){
-    var checkbox=document.getElementsByName("terms");
-    var contador=0
-    for (var i=0; i<checkbox.length; i++){
-        if(checkbox[i].checked)
-        contador++
-    }
-    if(contador==0){
-        alert("Por favor, lee y acepta los términos y condiciones antes de proceder con el pago");
-        event.preventDefault
-    }
-}
+// ultimo intento antes de 2do OH con domi
+// function comprobarChecks(event){
+//     var checkbox=document.getElementsByName("terms");
+//     var contador=0
+//     for (var i=0; i<checkbox.length; i++){
+//         if(checkbox[i].checked)
+//         contador++
+//     }
+//     if(contador==0){
+//         alert("Por favor, lee y acepta los términos y condiciones antes de proceder con el pago");
+//         event.preventDefault
+//     }
+// }
 
 
 // function valCheckbox(){
