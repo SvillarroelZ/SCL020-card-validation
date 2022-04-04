@@ -1,8 +1,16 @@
 import validator from './validator.js';
 
 
-Function validarCheckbox
-var checked=document.getElementById
+function validarCheckbox(){
+var checked=document.getElementsByName("pago").checked;
+if(checked === false){
+    document.getElementById("demofalso").innerHTML= "Debes aceptar los términos y condiciones antes de proceder al pago";
+}
+    else{
+        document.getElementById("demofalso").innerHTML = checked; 
+    }
+    
+}
 
 
 // Validar checkbox términos y condiciones // 
