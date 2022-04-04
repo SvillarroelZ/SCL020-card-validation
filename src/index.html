@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felices Mascotas</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="https://raw.githubusercontent.com/SvillarroelZ/SCL020-card-validation.md/main/icono-paw.ico">
   </head>
 
   <body>
@@ -12,10 +13,24 @@
       <div><p>Cuadrado amarillo</p>
         <div> <p>Cuadrado Rosado</p>
           <a href="index.html"><img src="https://github.com/SvillarroelZ/SCL020-card-validation.md/blob/main/logo-paw.png?raw=true" alt="logo-paw"> </a>
-        <div><p>Cuadrado morado</p></div>
+        <div><p>Cuadrado morado</p>
+          <div>
+            <button><a href="#">Ingresa</a></button>
+            <button><a href="#">Registrate</a></button>
+          </div>
+          <input type="text" placeholder="Buscar"><img src="https://github.com/SvillarroelZ/SCL020-card-validation.md/blob/main/lupa.png?raw=true"></imput>
+        </div>
       </div>
       <div><p>Cuadrado naranjo</p>
-        <nav></nav>
+        <nav>
+          <ul>
+            <li><a href="#">Todo Gatos</a></li>
+            <li><a href="#">Todo Perros</a></li>
+            <li><a href="#">Super Premium</a></li>
+            <li><a href="#">Medicamentos</a></li>
+            <li><a href="#">Contáctanos</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -26,8 +41,8 @@
           <h1>Tu pedido</h1>
           <table>
           <tr>
-            <td><strong>Productos:</strong></td>
-            <td><strong>Subtotal:</strong></td>
+            <td>Productos:</td>
+            <td>Subtotal:</td>
           </tr>
 
           <tr>
@@ -41,8 +56,8 @@
           </tr>
 
           <tr>
-            <td><strong>Total:</strong></td>
-            <td><strong>$20.770</strong></td>
+            <td>Total:</td>
+            <td>$20.770</td>
           </tr>
 
           </table>
@@ -53,27 +68,27 @@
         <form id="formulario">
           <h1>Datos de facturación</h1>
             <input type="text" id="username" placeholder="Nombre" required autocomplete="off" pattern="[a-zA-Z]+">
-            <br>
+            
             <input type="text" id="surname" placeholder="Apellido" required autocomplete="off" pattern="[a-zA-Z]+">
-            <br>
+            
             <input type="text" id="rut" placeholder="RUT" required autocomplete="off" minlength="8" maxlength="9">
-            <br>
+            
             <input type="tel" id="tel" placeholder="Celular Ej: 569 1234 5678" required autocomplete="off" pattern="[0-9]+" minlength="11" maxlength="11">
-            <br>
+            
             <input type="street-adress" id="adress" placeholder="Dirección" required autocomplete="off">
-            <br>
+            
 
-            <input type="radio" name="pago"/>Boleta
-            <input type="radio" name="pago"/>Factura
-            <br>
+            <label><input type="radio" id="pago" name="pago"/>Boleta</label>
+            <label><input type="radio" id="pago" name="pago"/>Factura</label>
+            
     
-            <input type="radio" name="medio"/>Efectivo
-            <input type="radio" name="medio" checked/>Tarjeta
-            <br>
-         
-            <input type="checkbox" name="terms"/>He leído y acepto los <a href="#"> términos y condiciones</a>
-            <br>
-   
+            <label><input type="radio" id="medio" name="medio"/>Efectivo</label>
+            <label><input type="radio" id="medio" name="medio" checked/>Tarjeta</label>
+            
+            
+            <input type="checkbox" id="terms" name="terms"/>He leído y acepto los <a href="#"> términos y condiciones</a>
+            
+
             <button>Siguiente</button>
          
         </form>
