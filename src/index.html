@@ -78,7 +78,7 @@
             <input type="street-adress" id="adress" placeholder="Dirección" required autocomplete="off">
             
 
-            <label><input type="radio" id="boleta" name="pago"/>Boleta</label>
+            <label><input type="radio" id="boleta" name="pago" checked/>Boleta</label>
             <label><input type="radio" id="factura" name="pago"/>Factura</label>
             
     
@@ -86,12 +86,11 @@
             <label><input type="radio" id="tarjeta" name="medio" checked/>Tarjeta</label>
             
             
-            <input type="checkbox" id="terms" name="terms"/>He leído y acepto los <a href="#"> términos y condiciones</a>
+            <input type="checkbox"  id="terms" name="terms" />He leído y acepto los <a href="#"> términos y condiciones</a>
             <p id="errUnchecked"></p>
             
-
-            <button onclick="validarCheckbox()">Siguiente</button>
-         
+            <button>Siguiente</button>
+            
         </form>
       </div>
       </div>
