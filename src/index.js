@@ -1,5 +1,5 @@
 import validator from './validator.js';
-
+// Validar checkbox términos y condiciones // 
 // var checkbox=document.querySelector(".terms");
 //  console.log(checkbox)
 //       checkbox.querySelector("change", validaCheckbox, false);
@@ -10,13 +10,24 @@ import validator from './validator.js';
 //           }
 //       }
 
-function pago(){
-boletaFactura=document.querySelector('input[id="pago"]:checked').value;
-// var boletaFactura=document.getElementById("pago").checked;
-        if(boletaFactura.checked==true){
-        alert("Por favor, marque una opción")
-    }
+function valCheckbox(){
+    var validando=document.getElementById("terms");
+    validando.addEventListener("checked", ,false);
+
 }
+
+
+
+
+
+// Intento 2/domi
+//function pago(){
+// boletaFactura=document.querySelector('input[id="pago"]:checked').value;
+// // var boletaFactura=document.getElementById("pago").checked;
+//         if(boletaFactura.checked==true){
+//         alert("Por favor, marque una opción")
+//     }
+// }
 
 // Intento 1 despues de la Domi
 // var checkbox=document.getElementById("terms");
@@ -29,7 +40,7 @@ boletaFactura=document.querySelector('input[id="pago"]:checked').value;
 //          }
 //      }
 
-    //intento con la domi
+//intento con la domi
     //      if (checked){
     //          alert("Checkbox está seleccionado");
     //         break;
@@ -64,7 +75,7 @@ boletaFactura=document.querySelector('input[id="pago"]:checked').value;
 
 //     }
 
-//Guardar datos de formulario en botón//
+// Guardar datos de formulario en botón y redireccionar //
 
 var formulario=document.getElementById("formulario");
 formulario.addEventListener("submit", function(e) {
