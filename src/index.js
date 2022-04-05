@@ -18,7 +18,7 @@ window.location.href="./validacion.html"
     
 }
 
-// Guardar datos username/surname y validación de checkbox del formulario  
+// Guardar datos de variables(username/surname y validación de checkbox del formulario) al momento de hacer clic en submit  
 
 let formulario=document.getElementById("formulario");
 formulario.addEventListener("submit", function(e){
@@ -28,6 +28,7 @@ formulario.addEventListener("submit", function(e){
     guardarNombre()
 })
 
+//Guardar nombre y apellido para utilizarlo en validacion.html
 function guardarNombre(){
     let username=document.getElementById("username").value;
     let surname=document.getElementById("surname").value;
