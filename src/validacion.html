@@ -54,8 +54,8 @@
               <option>Banco Itaú</option>
             </select>
             
-            <input type="text" name="validate_card" placeholder="xxxx xxxx xxxx 1234" autocomplete="off" pattern="[0-9]+">
-            <input type="text" name="cvv" placeholder="CVV" pattern="[0-9]+" maxlength="3" minlength="3" autocomplete="off">
+            <input type="number" name="ccNumber" id="validateCard" placeholder="xxxx xxxx xxxx 1234" min="16" max="16" autocomplete="off" pattern="[0-9-#]{16}" required>
+            <input type="number" name="cvv" placeholder="CVV" pattern="[0-9]+" maxlength="3" minlength="3" autocomplete="off">
             <input type="date" name="expire_date">
             <select name="dues">
               <option disabled selected>Seleccione cuotas</option>
@@ -64,6 +64,7 @@
               <option>9</option>
               <option>12</option>
             </select>
+            <button id="validar">Pagar</button>
           </form>
 
         </div>
