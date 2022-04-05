@@ -7,33 +7,40 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="icon" href="https://raw.githubusercontent.com/SvillarroelZ/SCL020-card-validation.md/main/icono-paw.ico">
   </head>
+  
+  <header>
+    <div><p>Cuadrado amarillo</p>
 
-  <body>
-    <header>
-      <div><p>Cuadrado amarillo</p>
-        <div> <p>Cuadrado Rosado</p>
-          <a href="index.html"><img src="https://github.com/SvillarroelZ/SCL020-card-validation.md/blob/main/logo-paw.png?raw=true" alt="logo-paw"> </a>
-        <div><p>Cuadrado morado</p>
-          <div>
-            <button><a href="#">Ingresa</a></button>
-            <button><a href="#">Registrate</a></button>
-          </div>
-          <input type="text" placeholder="Buscar"><img src="https://github.com/SvillarroelZ/SCL020-card-validation.md/blob/main/lupa.png?raw=true"></imput>
-        </div>
+      <div> <p>Cuadrado Rosado</p>
+        <h1>Felices Mascotas</h1>
+        <a href="index.html"><img src="https://github.com/SvillarroelZ/SCL020-card-validation.md/blob/main/logo-paw.png?raw=true" alt="logo-paw"> </a>
       </div>
+
+      <div><p>Cuadrado morado</p>
+        <div>
+          <button><a href="#">Ingresa</a></button>
+          <button><a href="#">Registrate</a></button>
+        </div>
+        <input type="text" placeholder="Buscar"><img src="https://github.com/SvillarroelZ/SCL020-card-validation.md/blob/main/lupa.png?raw=true"></imput>
+      </div>
+
       <div><p>Cuadrado naranjo</p>
         <nav>
           <ul>
-            <li><a href="#">Todo Gatos</a></li>
+           <li><a href="#">Todo Gatos</a></li>
             <li><a href="#">Todo Perros</a></li>
             <li><a href="#">Super Premium</a></li>
             <li><a href="#">Medicamentos</a></li>
             <li><a href="#">Contáctanos</a></li>
           </ul>
-        </nav>
+        </nav> 
       </div>
-    </header>
 
+    </div>
+  </header>
+
+  <body>
+    <h3>¿Tienes un cupón? Ingresalo <a href="#">Aquí</a></h3>
     <main>
       <div> <p>Cuadrado amarillo</p>
 
@@ -63,38 +70,37 @@
           </table>
         </div>
 
-      <div> <p>cuadrado morado</p>
+        <div> <p>cuadrado morado</p>
 
-        <form id="formulario">
-          <h2>Datos de facturación</h2>
-            <input type="text" id="username" placeholder="Nombre" required autocomplete="off" pattern="[a-zA-Z]+">
+          <form id="formulario">
+            <h2>Datos de facturación</h2>
+              <input type="text" id="username" placeholder="Nombre" required autocomplete="off" pattern="[a-zA-Z]+">
             
-            <input type="text" id="surname" placeholder="Apellido" required autocomplete="off" pattern="[a-zA-Z]+">
+              <input type="text" id="surname" placeholder="Apellido" required autocomplete="off" pattern="[a-zA-Z]+">
             
-            <input type="text" id="rut" placeholder="RUT" required autocomplete="off" minlength="8" maxlength="9">
+              <input type="text" id="rut" placeholder="RUT" required autocomplete="off" minlength="8" maxlength="9">
             
-            <input type="tel" id="tel" placeholder="Celular Ej: 569 1234 5678" required autocomplete="off" pattern="[0-9]+" minlength="11" maxlength="11">
+              <input type="tel" id="tel" placeholder="Celular Ej: 569 1234 5678" required autocomplete="off" pattern="[0-9]+" minlength="11" maxlength="11">
             
-            <input type="street-adress" id="adress" placeholder="Dirección" required autocomplete="off">
+              <input type="street-adress" id="adress" placeholder="Dirección" required autocomplete="off">
             
 
-            <label><input type="radio" id="boleta" name="pago" checked/>Boleta</label>
-            <label><input type="radio" id="factura" name="pago"/>Factura</label>
+              <label><input type="radio" id="boleta" name="pago" checked/>Boleta</label>
+              <label><input type="radio" id="factura" name="pago"/>Factura</label>
             
     
-            <label><input type="radio" id="efectivo" name="medio"/>Efectivo</label>
-            <label><input type="radio" id="tarjeta" name="medio" checked/>Tarjeta</label>
+              <label><input type="radio" id="efectivo" name="medio"/>Efectivo</label>
+              <label><input type="radio" id="tarjeta" name="medio" checked/>Tarjeta</label>
             
             
-            <input type="checkbox"  id="terms" name="terms" />He leído y acepto los <a href="#"> términos y condiciones</a>
-            <p id="errUnchecked"></p>
+              <input type="checkbox"  id="terms" name="terms" />He leído y acepto los <a href="#"> términos y condiciones</a>
+              <p id="errUnchecked"></p>
             
-            <button>Siguiente</button>
-            
-        </form>
+              <div><button>Siguiente</button></div>
+          </form>
+        </div>
+
       </div>
-      </div>
-    
     </main>
 
     <script src="index.js" type="module"></script>
