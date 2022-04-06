@@ -1,8 +1,5 @@
 import validator from './validator.js';
 
-// Validar radio buttons de pago
-// Validar radio buttons de medio
-
 // Validar checkbox y redireccionar página a 2do validacion.html
 function validarCheckbox(){
     
@@ -15,7 +12,15 @@ document.getElementById("errUnchecked").innerHTML = checked;
 
 window.location.href="./validacion.html"
  }
-    
+}
+
+//Guardar nombre y apellido para utilizarlo en validacion.html
+function guardarNombre(){
+    let username=document.getElementById("username").value;
+    let surname=document.getElementById("surname").value;
+
+        alert (username);  
+        alert (surname);
 }
 
 // Guardar datos de variables(username/surname y validación de checkbox del formulario) al momento de hacer clic en submit  
@@ -28,12 +33,26 @@ formulario.addEventListener("submit", function(e){
     guardarNombre()
 })
 
-//Guardar nombre y apellido para utilizarlo en validacion.html
-function guardarNombre(){
-    let username=document.getElementById("username").value;
-    let surname=document.getElementById("surname").value;
+btnValidar.addEventListener("click", function(){
+    let cardNumber=document.getElementById("validateCard").Value;
+    if (cardNumber.length < 16){
+        return
+    }
+    let hiddenCard=validator.maskify(cardNumber);
+    let validar=validator.isValid(cardNumber);
+    if (validar){
+        document.getElementById("validCard").innerHTML="Tarjeta válida"
+        document.getElementById("validateCard").value=hiddenCard;
+        btnEnviar.disabled=false;
+        btnValidar.disabled=true;
+    } else{
+        document.getElementById("validCard").innerHTML="La tarjeta ingresada es incorrecta";
+    }
+})
 
-        alert (username);  
-        alert (surname);
+formulario.addEventListener("submit", function(e){
+    event.preventDefault();
+    enviarFormulario();
+})
 
-}
+
