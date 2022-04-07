@@ -33,6 +33,8 @@ formulario.addEventListener("submit", function(e){
     guardarNombre()
 })
 
+//Validacion.html botones-funciones
+
 btnValidar.addEventListener("click", function(){
     let cardNumber=document.getElementById("validateCard").Value;
     if (cardNumber.length < 16){
