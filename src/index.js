@@ -22,7 +22,7 @@ formulario.addEventListener("submit", function(e){
 })
 
 // mostrar los datos de formulario 1 en tarjeta de validacion.html
-function mostrarNombres 
+functio monstrarNombres 
 
 
 // Validar checkbox y redireccionar página a 2do validacion.html
@@ -56,7 +56,7 @@ const btnValidar = document.getElementById("btnValidar");
      let validar=validator.isValid(cardNumber);
      if (validar){
          document.getElementById("validCard").innerHTML="Tarjeta válida"
-         document.getElementById("validateCard").value=hiddenCard;
+         document.getElementById("validateCard").value=hiddenCard; //donde se muestra esto??? ayura
          btnEnviar.disabled=false;
          btnValidar.disabled=true;
      } else{
@@ -64,7 +64,6 @@ const btnValidar = document.getElementById("btnValidar");
      }
 
  })
-
  let enviarFormulario=document.getElementById("enviarFormulario");
 enviarFormulario.addEventListener("submit", function(e){
     e.preventDefault()

@@ -4,7 +4,7 @@ const validator = {
 isValid: function (validateCard) { 
   let arrayValidateCard = []; // crea el array  
 
-  for (let i = validateCard.length - 1; i >= 0; i--) {   // saca de a 1 digito, ???si recorre para variable i, del largo de los numeros ingresados, 
+  for (let i = validateCard.length - 1; i >= 0; i--) {   // lenght -1 llama al ultimo digito del array, y con i-- lo recorro al reves 
     let caracter = validateCard.charAt(i); // Devuelve el caracter de una posicion dada mediante char.At
     let numero = parseInt(caracter); // Guardamos cada uno de los caracteres "parseados" como variable "numero"
     arrayValidateCard.push(numero);// Agrega la variable numero al array que creamos arriba mediante push
