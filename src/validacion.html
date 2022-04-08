@@ -45,7 +45,7 @@
 
         <div><p>cuadrado rosado</p>
 
-          <form class="formulario_validacion">
+          <form id=formularioValidacion>
             <select name="bank" id="bank">
               <option disabled selected>Seleccione su banco</option>
               <option>Banco Estado</option> 
@@ -55,7 +55,7 @@
             </select>
             
             <input type="text" name="ccNumber" id="validateCard" placeholder="xxxx xxxx xxxx 1234" min="16" max="16" autocomplete="off" pattern="[0-9-#]{16}" required>
-            <input type="text" name="cvv" placeholder="CVV" pattern="[0-9]+" maxlength="3" minlength="3" autocomplete="off">
+            <input type="text" name="cvv" placeholder="CVV" pattern="[0-9]+" maxlength="3" minlength="3" autocomplete="off" required>
             <input type="date" name="expire_date">
             <select name="dues">
               <option disabled selected>Seleccione cuotas</option>
@@ -64,8 +64,10 @@
               <option>9</option>
               <option>12</option>
             </select>
+            
+            <button type="submit" id="btnValidar" onclick="validator()">Verifica tu tarjeta</button>
             <p id="validCard"></p>
-            <button id="btnValidar" onclick="validator()">Pagar</button>          
+            <button type="submit" id="btnEnviar" onclick="validator()">Pagar</button>          
           </form>
 
         </div>
