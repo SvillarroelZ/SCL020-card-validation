@@ -40,7 +40,7 @@
   </header>
 
   <body>
-    <main>
+    <main> 
       <div> <p>Cuadrado amarillo</p>
 
         <div><p>cuadrado rosado</p>
@@ -54,7 +54,7 @@
               <option>Banco Itaú</option>
             </select>
             
-            <input type="text" name="ccNumber" id="validateCard" placeholder="xxxx xxxx xxxx 1234" min="16" max="16" autocomplete="off" pattern="[0-9-#]{16}" required>
+            <input type="text" name="ccNumber" id="validateCard" placeholder="1234 5678 9012 3456" minlength="16" maxlength="16" autocomplete="off" pattern="[0-9-#]+" title="Ha ingresado un número incorrecto" required>
             <input type="text" name="cvv" placeholder="CVV" pattern="[0-9]+" maxlength="3" minlength="3" autocomplete="off" required>
             <input type="date" name="expire_date">
             <select name="dues">
@@ -65,26 +65,31 @@
               <option>12</option>
             </select>
             
-            <button type="submit" id="btnValidar" onclick="validator()">Verifica tu tarjeta</button>
+            <input type="button" class="btnValidar" id="btnValidar" name="btnValidar" value="Verifica tu tarjeta"></input>
             <p id="validCard"></p>
-            <button type="submit" id="btnEnviar" onclick="validator()">Pagar</button>          
-          </form>
+         <button type="submit" id="btnEnviar" onclick="validator()">Pagar</button>           
+         </form> 
 
         </div>
 
         <div> <p>cuadrado morado</p>
+          <p>Banco</p>
+          <p><img src="https://github.com/SvillarroelZ/SCL020-card-validation/blob/main/chip.png?raw=true" alt="chip"></p>
+          <p>xxxx xxxx xxxx 1234</p>
+          <p>Mes/Year</p>
+          <p>Nombre y Apellido</p>
         </div>
 
       </div>
-      
-    <script src="index.js" type="module"></script>
   
     <div>
       <!-- <a =href"POPUP"> <input type="button" value="Pagar"></a> -->
     </div>
     
-    </main>
+    </main> 
+    <script src="validacion.js" type="module"></script>
   </body>
+  
 
   <footer>
     <div>
@@ -100,6 +105,6 @@
       <p>+569 1234 5678</p>
     </div>
   </footer>
-    
+  
 
 </html>
