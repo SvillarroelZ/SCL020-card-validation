@@ -45,19 +45,20 @@
 
         <div><p>cuadrado rosado</p>
 
-          <form id="formularioValidacion">
+          <form id="formularioValidacion" class="formularioVal">
             <select name="bank" id="bank">
               <option disabled selected>Seleccione su banco</option>
               <option>Banco Estado</option> 
               <option>Banco de Chile</option> 
               <option>BBVA</option> 
               <option>Banco Itaú</option>
+
             </select>
-            
-            <input type="text" name="ccNumber" id="validateCard" placeholder="1234 5678 9012 3456" minlength="16" maxlength="16" autocomplete="off" pattern="[0-9-#]+" title="Ha ingresado un número incorrecto" required>
-            <input type="text" name="cvv" placeholder="CVV" pattern="[0-9]+" maxlength="3" minlength="3" autocomplete="off" required>
-            <input type="month" name="expire_date" max="2030-12" min="2022-04" required>
-            <select name="dues">
+            <input type="text" id="validateCard"name="ccNumber"  placeholder="1234 5678 9012 3456" minlength="16" maxlength="16" autocomplete="off" pattern="[0-9-#]+" title="Ha ingresado un número incorrecto" > 
+            <input type="text" id="codValidacion" name="cvv" placeholder="CVV" pattern="[0-9]+" maxlength="3" minlength="3" autocomplete="off" required>
+            <input type="month" id="expireDate" name="expire_date" max="2030-12" min="2022-04" required>
+
+            <select name="dues" id="dues">
               <option disabled selected>Seleccione cuotas</option>
               <option>3</option>
               <option>6</option>
@@ -65,18 +66,21 @@
               <option>12</option>
             </select>
             
-            <input type="button" class="btnValidar" id="btnValidar" name="btnValidar" value="Verifica tu tarjeta">
+            <input type="button" id="btnValidar" class="btnValidar"  name="btnValidar" value="Verifica tu tarjeta">
             <p id="validCard"></p>
+
          <button type="submit" id="btnEnviar" onclick="validator()">Pagar</button>           
          </form> 
 
         </div>
 
         <div> <p>cuadrado morado</p>
-          <p>Banco</p>
+          
           <p><img src="https://github.com/SvillarroelZ/SCL020-card-validation/blob/main/chip.png?raw=true" alt="chip"></p>
-          <p>xxxx xxxx xxxx 1234</p>
+          <p>Banco</p>
+          <input type="text" id="numberCard" >
           <p>Mes/Year</p>
+          <p id="cvv"></p>
           <p>Nombre y Apellido</p>
         </div>
 
