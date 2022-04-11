@@ -52,7 +52,7 @@ isValid: function (validateCard) {
     if (validateCard.length > 4 ){ //Condición= si el largo de los numeros ingresados es mayor a 4, 
         hiddenCard=punto.repeat(validateCard.length-4) + validateCard.slice(-4); // Repite los numeros de la tarjeta con puntos, menos los ultiomos 4
     }
-    console.log(hiddenCard);
+    //console.log(hiddenCard);
     return hiddenCard;
  }
  
