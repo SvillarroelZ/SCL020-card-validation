@@ -21,7 +21,7 @@
           <button><a href="#">Ingresa</a></button>
           <button><a href="#">Registrate</a></button>
         </div>
-        <input type="text" placeholder="Buscar"><img src="https://github.com/SvillarroelZ/SCL020-card-validation.md/blob/main/lupa.png?raw=true"></input>
+        <input type="text" placeholder="Buscar"><img src="https://github.com/SvillarroelZ/SCL020-card-validation.md/blob/main/lupa.png?raw=true">
       </div>
 
       <div><p>Cuadrado naranjo</p>
@@ -56,7 +56,7 @@
             
             <input type="text" name="ccNumber" id="validateCard" placeholder="1234 5678 9012 3456" minlength="16" maxlength="16" autocomplete="off" pattern="[0-9-#]+" title="Ha ingresado un número incorrecto" required>
             <input type="text" name="cvv" placeholder="CVV" pattern="[0-9]+" maxlength="3" minlength="3" autocomplete="off" required>
-            <input type="date" name="expire_date">
+            <input type="month" name="expire_date" max="2030-12" min="2022-04" required>
             <select name="dues">
               <option disabled selected>Seleccione cuotas</option>
               <option>3</option>
@@ -65,7 +65,7 @@
               <option>12</option>
             </select>
             
-            <input type="button" class="btnValidar" id="btnValidar" name="btnValidar" value="Verifica tu tarjeta"></input>
+            <input type="button" class="btnValidar" id="btnValidar" name="btnValidar" value="Verifica tu tarjeta">
             <p id="validCard"></p>
          <button type="submit" id="btnEnviar" onclick="validator()">Pagar</button>           
          </form> 
