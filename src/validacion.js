@@ -1,6 +1,7 @@
 import validator from './validator.js';
 
  const btnValidar = document.getElementById("btnValidar");
+ const nombreTar = document.getElementById("username", "surname");
 
   btnValidar.addEventListener("click", function(){ 
       let cardNumber = document.getElementById("validateCard").value; 
@@ -37,3 +38,18 @@ import validator from './validator.js';
         .replace(/([0-9]{4})/g,"$1 ") //que busque numeros del 0 a 9 y agrupe al final de la entrada, pero que cada 4 caracteres separe el grupo, con $1 lo agrega (espaciado)despues de cada grupo.
         .trim();//quita el ultimo espaciado de una cadena de texto con trimm
     });
+
+    document.getElementById ("codValidacion").addEventListener("keyup", (e) =>{
+        let valorCvv = e.target.value;
+
+        document.getElementById ("cvvRecibe").value = valorCvv.replace(/\s/g, "")//con la expresion elimina espacios en blanco
+        
+        .replace(/\D/g,""); //Con la expresion borra caracteres que no sean digitos
+    })
+
+    
+    //     let username = document.getElementById("username").value;
+    //     let surname = document.getElementById("surname").value;
+    //     const nombreApellido = (username + surname)
+    //     nombreApellido.addEventListener
+    // }
