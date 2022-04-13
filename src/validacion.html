@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felices Mascotas</title>
     <link rel="stylesheet" href="style.css"/>
-    <link rel="icon" href="https://raw.githubusercontent.com/SvillarroelZ/SCL020-card-validation.md/main/icono-paw.ico">
+    <link rel="icon" href="https://raw.githubusercontent.com/SvillarroelZ/SCL020-card-validation/main/round-icono-paw.ico">
   </head>
 
   <header>
@@ -17,23 +17,27 @@
       </div>
 
       <div><p>Cuadrado morado</p>
+        
         <div>
           <button><a href="#">Ingresa</a></button>
           <button><a href="#">Registrate</a></button>
         </div>
+
         <input type="text" placeholder="Buscar"><img src="https://github.com/SvillarroelZ/SCL020-card-validation.md/blob/main/lupa.png?raw=true">
       </div>
 
       <div><p>Cuadrado naranjo</p>
+
         <nav>
           <ul>
-           <li><a href="#">Todo Gatos</a></li>
+            <li><a href="#">Todo Gatos</a></li>
             <li><a href="#">Todo Perros</a></li>
             <li><a href="#">Super Premium</a></li>
             <li><a href="#">Medicamentos</a></li>
             <li><a href="#">Contáctanos</a></li>
           </ul>
         </nav> 
+
       </div>
 
     </div>
@@ -46,14 +50,15 @@
         <div><p>cuadrado rosado</p>
 
           <form id="formularioValidacion" class="formularioVal">
+
             <select name="bank" id="bank">
               <option disabled selected>Seleccione su banco</option>
               <option>Banco Estado</option> 
               <option>Banco de Chile</option> 
               <option>BBVA</option> 
               <option>Banco Itaú</option>
-
             </select>
+            
             <input type="text" id="validateCard" name="ccNumber" placeholder="1234 5678 9012 3456" minlength="16" maxlength="16" autocomplete="off" pattern="[0-9-#]+"> 
             <input type="text" id="codValidacion" name="cvv" placeholder="CVV" pattern="[0-9]+" maxlength="3" minlength="3" autocomplete="off" required>
             <input type="month" id="expireDate" name="expire_date" max="2030-12" min="2022-04" required>
@@ -69,8 +74,7 @@
             <input type="button" id="btnValidar" class="btnValidar"  name="btnValidar" value="Verifica tu tarjeta">
             <p id="validCard"></p>
 
-         <button type="submit" id="btnEnviar">Pagar</button>           
-         </form> 
+          </form> 
 
         </div>
 
@@ -82,6 +86,7 @@
           <input type="text" id="fecha" placeholder= "MM/AAAA" readonly>
           <input type="text" id="cvvRecibe" readonly>
           <input type="text" id="nombres" value="nombre" readonly>
+
         </div>
 
       </div>
@@ -104,7 +109,7 @@
       <img src="https://github.com/SvillarroelZ/SCL020-card-validation.md/blob/main/Logo-wasap.png?raw=true" alt="Logo-whatsapp"> 
       <p>+569 1234 5678</p>
     </div>
+
   </footer>
   
-
 </html>
