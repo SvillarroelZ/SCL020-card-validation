@@ -21,9 +21,9 @@ isValid: function (validateCard) { // isValid es un metodo de JS que valida el d
         let posicionPrimerDigito = numeroMultiplicado.toString().charAt(0, 1); // Pasa el número a String. Corto el primer digito
         let posicionSegundoDigito = numeroMultiplicado.toString().charAt(1, 2); // Pasa el número a String. Corto el segundo digito
         let numeroSumado = parseInt(posicionPrimerDigito) + parseInt(posicionSegundoDigito); // Parsea ambos digitos y los suma en la variable numeroSumado
-         console.log(posicionPrimerDigito);
-         console.log(posicionSegundoDigito);
-         console.log(numeroSumado);
+        //console.log(posicionPrimerDigito);
+        //console.log(posicionSegundoDigito);
+        //console.log(numeroSumado);
         numeroMultiplicadoYSumado.push(numeroSumado); // Toma el resultado y lo pone en el array (de la linea 13)
       } else {
         numeroMultiplicadoYSumado.push(numeroMultiplicado); // si el numero no es >=10 lo pone directo en al array de la línea 13
