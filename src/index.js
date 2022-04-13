@@ -7,7 +7,9 @@ const formulario = document.getElementById("formulario");   //porque la llamo en
 function guardarNombre() {
     let username = document.getElementById("username").value;
     let surname = document.getElementById("surname").value;
-    alert(username + " " + surname);
+    let nombreCompleto = (username + " " + surname);
+
+    sessionStorage.setItem("Nombre", nombreCompleto);
 }
 // dar formato al rut con . y -
 

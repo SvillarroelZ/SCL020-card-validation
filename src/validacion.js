@@ -1,7 +1,12 @@
 import validator from './validator.js';
 
  const btnValidar = document.getElementById("btnValidar");
- const nombreTar = document.getElementById("username", "surname");
+ const nombreCompleto = sessionStorage.getItem("Nombre");
+ 
+ window.onload = function() {
+     //alert(nombreCompleto);
+    document.getElementById("nombres").value = nombreCompleto;
+  };
 
   btnValidar.addEventListener("click", function(){ 
       let cardNumber = document.getElementById("validateCard").value; 
@@ -20,14 +25,7 @@ import validator from './validator.js';
 
   })
 
-  //mover datos de un input a otro con cada click
-  /*id= banco
-        numero de tarjeta
-        fecha
-        cvv
-        nombre apellido */
-
-    //Input numero de tarjeta
+//Input numero de tarjeta
 
     document.getElementById("validateCard").addEventListener("keyup", (e) =>{//al levantar el dedo de la tecla se ejecuta el evento
         let valorInput= e.target.value; // guardo dentro de la variable el valor del input, mediante el evento, accedo al elemento y al valor
@@ -48,8 +46,3 @@ import validator from './validator.js';
     })
 
     
-    //     let username = document.getElementById("username").value;
-    //     let surname = document.getElementById("surname").value;
-    //     const nombreApellido = (username + surname)
-    //     nombreApellido.addEventListener
-    // }
