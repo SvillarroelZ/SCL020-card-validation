@@ -1,0 +1,90 @@
+header{
+    display: flex;
+    flex-direction: column; 
+    width: auto;
+
+}
+
+.flex-containerAmarillo{
+    display: flex;
+    flex-direction: row;
+    background-color: #72FFBF ;
+    height: 185px;
+    width: auto;
+
+}
+
+.flex-itemRosado{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-itemRosado a{
+
+}
+.flex-itemMorado{
+
+}
+
+.flex-containerNaranjo{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    background-color: #485D8E;
+    height: 73px;   
+}
+
+.flex-containerNaranjo nav{
+    
+    
+}
+
+.flex-containerNaranjo a{
+
+}
+
+
+/*  CAMI FOOTER NO TOCAR */
+footer {
+    display: flex;  /* esto me permite usar herramientas de flex-box, porque lo hace flexible*/
+    background-color: #72FFBF;
+    justify-content: space-between;
+    height: auto;
+    
+}
+
+.direccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    color: #3A4C76;
+}
+
+.logoPaw {
+    height: 95px
+}
+
+.logoPaw img {
+    width: auto; 
+    max-height: 100%; 
+    padding: 2px;
+    align-content: center;
+}
+
+.logoWathsapp {
+    display: flex;
+    flex-direction: row;
+    height:100px;
+    align-items: center;
+    padding-right: 50px;
+    color: #3A4C76;
+}
+
+.logoWathsapp img {
+    width: auto; 
+    max-height: 35%;   
+    padding-right: 10px;  
+}
+
+/*  CAMI FOOTER NO TOCAR */
