@@ -149,8 +149,61 @@ header{
     color: #fff;  
 }
 
-
-/*  CAMI FOOTER NO TOCAR */
+/*   --  BODY  --  */
+.datosDelPago {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+.datosYDibujoTarjeta {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.formularioVal {
+    background-color: red;
+    height: 400px;
+}
+#banco {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 20px 0px 0px;
+    padding: 20px 20px 0px 20px;
+}
+.dibujoTarjeta {
+    background-color: #3A4C76;
+    width: 70%;
+    max-height: 250px;
+    color: white;
+    margin: 60px 50px 50px 50px;
+    height: 400px;
+    border-radius: 20px;
+}
+.dibujoTarjeta img {
+    height: 50px;
+    width: 70px;
+    border-radius: 20px;
+    margin-left: 50px;
+   }
+.dibujoTarjeta input{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    background-size: cover;
+    background-color: #3A4C76;
+}
+#fechaCvv{
+    display: flex;
+    justify-content: flex-end;
+}
+.btnValidar {
+    display: flex;
+    justify-content: center;
+    margin: 0% 50% 0% 50%;
+    background-color: #3A4C76;
+    color: white;
+}
+/*   --  FOOTER  --   */
 footer {
     display: flex;  /* esto me permite usar herramientas de flex-box, porque lo hace flexible*/
     background-color: #72FFBF;
