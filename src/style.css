@@ -1,46 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{ font-family: 'Quicksand', sans-serif;
+
+}
+a{
+    color:#12928A;
+}
+
+/*    -- HEADER --   */
 header{
     display: flex;
     flex-direction: column; 
+    justify-items: center;
     width: auto;
-
+    padding: 0;
+    margin: 0;
 }
 
 .flex-containerAmarillo{
     display: flex;
     flex-direction: row;
     background-color: #72FFBF ;
-    height: 185px;
+    height: 110px;
     width: auto;
-
+    justify-content: space-between;
 }
 
 .flex-itemRosado{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: left;
+    height: 50%;
+    width: auto;
+    
 }
 
-.flex-itemRosado a{
-
+.flex-itemRosado img{
+    
+    align-content: center;
+    padding: 8px;
+    margin-left: 20px;
+    margin-right: 15px;
+    
+    width: auto;
+    max-height: 170%;
 }
+.flex-itemRosado h1{
+    
+    width: 278px;
+    height: auto;
+    align-self: center;
+    margin: 70px 0px 15px 0px;
+
+    letter-spacing: 0.15em;
+    font-family: 'Luckiest Guy';
+    color: #3A4C76;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+
+
 .flex-itemMorado{
-
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    height: 50%;
+    width: auto;
 }
+
+.login{
+    background-color: #FCF8F0;
+    border-radius: 5px;
+    text-align: center;
+    width: 180px;
+    height: 17px;
+    
+    margin: 25px 0px 0px 20px;
+    padding: 4px;
+
+    color: lightgray;
+    font-size: 15px;
+    font-weight: 250;
+    letter-spacing: 2.2px;
+    text-decoration: none;
+}
+
+.login span{
+    color: #12928A;
+    font-weight: 400;
+}
+
+.login:hover{
+    background: #E7C63D;
+    color: #fff;  
+}
+
+.search input{
+    
+    padding: 8px;
+    border-radius: 8px;
+    border: 3px solid #E7C63D;
+    text-decoration: none;
+    color: #3A4C76;
+    width: 190px;
+    height: 15px;
+    text-align: left;
+    margin-top: 8px;
+    margin-right: 25px;
+    letter-spacing: 1.8px;
+}
+
+/*   -- NAVEGADOR --   */
 
 .flex-containerNaranjo{
-    display: flex;
-    flex-direction: row;
-    width: auto;
+    height: 41px;  
     background-color: #485D8E;
-    height: 73px;   
+    padding-top: 1px;
 }
 
-.flex-containerNaranjo nav{
-    
-    
+.nav{
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+    height: 35px;
+    max-width: auto;
+    margin-top: 6px;   
 }
 
-.flex-containerNaranjo a{
+.url{
+    display:inline-block;
+    text-decoration: none;
+    color:#485D8E;
+    letter-spacing: 0.9px;
+    
+    background-color: #CED2DD; 
+    margin: 0px; 
+    
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 3px;
+}
 
+.url:hover{
+    background: #E7C63D;
+    color: #fff;  
 }
 
 
