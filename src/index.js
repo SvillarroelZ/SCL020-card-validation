@@ -45,8 +45,11 @@ function validarCheckbox() {
     if (checked === false) {
         document.getElementById("errUnchecked").innerHTML="Debes aceptar los términos y condiciones antes de proceder al pago";
     }
-    else {
-        document.getElementById("errUnchecked").innerHTML=checked;
+    else if (checked===true){
         window.location.href="./validacion.html"
     }
+    // else {
+    //     document.getElementById("errUnchecked").innerHTML=checked;
+    //     window.location.href="./validacion.html"
+    // }
 }
