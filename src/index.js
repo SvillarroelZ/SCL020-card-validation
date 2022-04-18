@@ -46,7 +46,7 @@ function validarCheckbox() {
         document.getElementById("errUnchecked").innerHTML="Debes aceptar los términos y condiciones antes de proceder al pago";
     }
     else {
-        document.getElementById("errUnchecked").innerHTML=checked;
+        //document.getElementById("errUnchecked").innerHTML=checked;
         window.location.href="./validacion.html"
     }
 }
