@@ -44,7 +44,6 @@ isValid: function(validateCard){ // isValid es un metodo de JS que valida el dat
    }
  },
 
-
 //Función para enmascarar el numero de la tarjeta dejando los ultimos 4 dígitos libres
   
   maskify: function(validateCard){
