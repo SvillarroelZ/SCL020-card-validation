@@ -41,71 +41,70 @@
   </header>
 
   <body>
-    <h3>¿Tienes un cupón? Ingresalo <a href="#">Aquí</a></h3>
+    <h3 class="cupon">¿Tienes un cupón? Ingresalo<a href="#"> Aquí </a></h3>
 
     <main>
-      <div> <p>Cuadrado amarillo</p>
-
-        <div> <p>cuadrado rosado</p>
-          <h2>Tu pedido</h2>
+        <div class="products">
+          <h2 class="titleIndex1">Tu pedido</h2>
 
           <table>
             <tr>
-              <td>Productos:</td>
-              <td>Subtotal:</td>
+              <td class="decoSubTitle">Productos:</td>
+              <td class="decoSubTitle">Subtotal:</td>
             </tr>
 
             <tr>
-              <td>Arena Cool Clean 8.6 kg</td>
-              <td>$10.790</td>
+              <td class="decoText">Arena Cool Clean 8.6 kg</td>
+              <td class="decoText">$10.790</td>
             </tr>
 
             <tr>
-              <td>Royal Canin Urinary care 2kg</td>
-              <td>$9.980</td>
+              <td class="decoText">Royal Canin Urinary care 2kg</td>
+              <td class="decoText">$9.980</td>
             </tr>
 
             <tr>
-              <td>Total:</td>
-              <td>$20.770</td>
+              <td class="decoSubTitle">Total:</td>
+              <td class="decoSubTitle">$20.770</td>
             </tr>
 
           </table>
         </div>
 
-        <div> <p>cuadrado morado</p>
+        <div class="form1"> 
 
-          <form id="formulario">
-            <h2>Datos de facturación</h2>
-              <input type="text" id="username" placeholder="Nombre" required autocomplete="off" pattern="[a-zA-Z]+">
+        <form id="formulario">
+            <h2 class="titleIndex2">Datos de facturación</h2>
+              <input class="datos" type="text" id="username" placeholder="Nombre" required autocomplete="off" pattern="[a-zA-Z]+">
               
-              <input type="text" id="surname" placeholder="Apellido" required autocomplete="off" pattern="[a-zA-Z]+">
+              <input class="datos" type="text" id="surname" placeholder="Apellido" required autocomplete="off" pattern="[a-zA-Z]+">
               
-              <input type="text" id="rut" placeholder="RUT" required autocomplete="off" minlength="8" maxlength="9">
+              <input class="datos" type="text" id="rut" placeholder="RUT" required autocomplete="off" minlength="8" maxlength="9">
               
-              <input type="text" id="tel" placeholder="Celular Ej: 569 1234 5678" required autocomplete="off" pattern="[0-9]+" minlength="11" maxlength="11">
+              <input class="datos" type="text" id="tel" placeholder="Cel: 569 1234 5678" required autocomplete="off" pattern="[0-9]+" minlength="11" maxlength="11">
               <p id="errTel"></p>
 
-              <input type="street-adress" id="adress" placeholder="Dirección" required autocomplete="off">
+              <input class="adress" type="street-adress" id="adress" placeholder="Dirección" required autocomplete="off">
 
-              <label><input type="radio" id="boleta" name="pago" required />Boleta</label>
-              <label><input type="radio" id="factura" name="pago"/>Factura</label>
-                
-              <label><input type="radio" id="efectivo" name="medio"/>Efectivo</label>
-              <label><input type="radio" id="tarjeta" name="medio" checked/>Tarjeta</label>
+            <div class=rBotones1>
+              <label class="rButton1"><input type="radio" id="boleta" name="pago" required /> Boleta </label>
+              <label class="rButton1"><input type="radio" id="factura" name="pago"/>Factura </label>
+            </div>    
+            <div class=rBotones2>  
+              <label class="rButton2"><input type="radio" id="efectivo" name="medio"/>Efectivo </label>
+              <label class="rButton2"><input type="radio" id="tarjeta" name="medio" checked/>Tarjeta </label>
+            </div>
             
-            
-              <input type="checkbox"  id="terms" name="terms" />He leído y acepto los<a href="#"> términos y condiciones</a>
+              <input class="checkBox" type="checkbox"  id="terms" name="terms" />He leído y acepto los<a href="#"> términos y condiciones</a>
               <p id="errUnchecked"></p>
             
               <div>
-                <button>Siguiente</button>
-              </div>
+                <button class="rdrBtn"> Siguiente </button>
+              </div>      
 
-          </form>
+        </form>
         </div>
 
-      </div>
     </main>
 
     <script src="index.js" type="module"></script>
