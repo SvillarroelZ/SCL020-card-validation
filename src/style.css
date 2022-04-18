@@ -18,7 +18,7 @@ header{
     margin: 0;
 }
 
-.flex-containerAmarillo{
+.flex-containerHeader{
     display: flex;
     flex-direction: row;
     background-color: #72FFBF ;
@@ -27,7 +27,7 @@ header{
     justify-content: space-between;
 }
 
-.flex-itemRosado{
+.flex-tittle{
     display: flex;
     flex-direction: row-reverse;
     justify-content: left;
@@ -35,7 +35,7 @@ header{
     width: auto;   
 }
 
-.flex-itemRosado img{
+.flex-tittle img{
     align-content: center;
     padding: 8px;
     margin-left: 20px;
@@ -44,7 +44,7 @@ header{
     width: auto;
     max-height: 170%;
 }
-.flex-itemRosado h1{
+.flex-tittle h1{
     width: 278px;
     height: auto;
     align-self: center;
@@ -58,7 +58,7 @@ header{
     line-height: 40px;
 }
 
-.flex-itemMorado{
+.flex-login{
     display: flex;
     flex-direction: column;
     justify-content: right;
@@ -109,7 +109,7 @@ header{
 
 /*   -- NAVEGADOR --   */
 
-.flex-containerNaranjo{
+.flex-nav{
     height: 43px;  
     background-color: #485D8E;
     padding-top: 1px;
@@ -185,8 +185,7 @@ main{
     align-items: center;
     height: auto;
     width: 40%;
-    margin: 20px;
-            
+    margin: 20px;         
 }
 
 .titleIndex1{
@@ -225,6 +224,7 @@ main{
     font-size: 19px;
     margin-bottom:20px;
 }
+
 .adress{
     width: 95%;
     background-color: #CED2DD;
@@ -442,8 +442,7 @@ footer {
     justify-content: space-between;
     height: 60px;
     width: auto ;
-    margin-top: 100px;
-    
+    margin-top: 100px;   
 }
 
 .direccion {
@@ -456,7 +455,6 @@ footer {
 }
 
 .logoPaw {
-    
     height: 80%
 }
 
@@ -476,9 +474,7 @@ footer {
     padding-right: 50px;
     color: #3A4C76;
     font-size: small;
-
-    justify-content: center;
-    
+    justify-content: center;    
 }
 
 .logoWathsapp img {
