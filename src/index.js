@@ -1,5 +1,3 @@
-// index.html
-
 const formulario = document.getElementById("formulario");   
 
 // Guardar nombre y apellido para utilizarlo en validacion.html
@@ -33,24 +31,6 @@ formulario.rut.addEventListener("blur", function () {
         document.getElementById("rut").value=rutFormato;
     }
 });
-
- // dar formato al celular -> pendiente de consulta
-//  formulario.tel.addEventListener("blur", function (){
-//      let numTelefono = document.getElementById("tel").value;
-//      console.log(numTelefono + "prueba")
-//      if (numTelefono.length == 11){
-//          let div1 = numTelefono.slice(0, 3);
-//          let div2 = numTelefono.slice(3, 7);
-//          let div3 = numTelefono.slice(7, 11);
-
-//          let numTelefono = (div1 + " " + div2 + " " + div3);
-//          console.log("numTelefono", numTelefono)
-//          document.getElementById("tel").value = numTelefono;
-//      }
-//     //  else {
-//     //      document.getElementById("errTel").innerHTML="ingresa un teléfono válido"
-//     //  }
-//  })
 
 // Evitar que el botón de submit haga la funcion de guardar-enviar, luego guarde nombre y apellido y valide checkbox
 formulario.addEventListener("submit", function (e) {

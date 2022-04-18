@@ -18,7 +18,7 @@ import validator from './validator.js';
           //document.getElementById("validateCard").value = hiddenCard; //
           //btnEnviar.disabled=false;
           //btnValidar.disabled=true;
-      } else{
+      }else{
           document.getElementById("validCard").innerHTML="La tarjeta ingresada es incorrecta";
           document.getElementById("validateCard").value=hiddenCard;
       }

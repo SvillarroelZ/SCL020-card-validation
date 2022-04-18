@@ -55,7 +55,7 @@
             </select>
             <input type="text" id="validateCard" name="ccNumber" placeholder="N° de Tarjeta  XXXX XXXX XXXX 1234" minlength="16"
               maxlength="16" autocomplete="off" pattern="[0-9-#]+">
-            <div id="cvvExpirateDate">
+            <div id="cvvExpireDate">
               <input type="text" id="codValidacion" name="cvv" placeholder="CVV  _ _ _" pattern="[0-9]+" maxlength="3"
               minlength="3" autocomplete="off" required>
               <input type="month" id="expireDate" name="expire_date" max="2030-12" min="2022-04" required>
@@ -67,6 +67,7 @@
               <option>9</option>
               <option>12</option>
             </select>
+            <p id="validCard"></p>
           </form>
         </div>
         <div class="dibujoTarjeta">
@@ -79,9 +80,11 @@
           </div>
           <input type="text" id="nombres" value="nombre" readonly>
         </div>
+        
       </div>
+      
       <input type="button" id="btnValidar" class="btnValidar" name="btnValidar" value="Pagar">
-      <p id="validCard"></p>
+      
     </main>
     <script src="validacion.js" type="module"></script>
   </body>
