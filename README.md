@@ -6,7 +6,7 @@ En nuestro proyecto de Card Validation decidimos realizar la simulación de una 
  **1.- Prototipo de Baja fidelidad:**<br/>
  Aquí determinamos que íbamos a trabajar simulando un carro de compras para productos de animales, en donde todos los pasos previos a la compra ya fueron realizados por el usuario y solo mostraremos los productos que el usuario se decidió a comprar, para pasar al proceso de compra y validación de datos.<br/>
 
-<img src ="https://github.com/SvillarroelZ/SCL020-card-validation.md/blob/main/prototipo-baja.jpg?raw=true" width = "600" height = "600" alt = "prototipo baja"> <br/><br/>
+<img src ="https://github.com/SvillarroelZ/SCL020-card-validation.md/blob/main/prototipo-baja.jpg?raw=true" width = "450" height = "450" alt = "prototipo baja"> <br/><br/>
 
 **2.- Prototipo de Media fidelidad:**<br/>
 En este prototipo decidimos que vamos a trabajar con 2 pantallas, además determinamos que vamos a incluir espacios de navegacion e hipervínculos (que en la realidad, para este proyecto, no son funcionales) Agregamos espacios de búsqueda, botones e información mas detallada de lo que queremos lograr de manera mas ordenada.
